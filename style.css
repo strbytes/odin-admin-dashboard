@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr) 5fr;
+  grid-template-rows: 150px 1fr;
+  grid-template-areas: "sidebar header" "sidebar content";
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
