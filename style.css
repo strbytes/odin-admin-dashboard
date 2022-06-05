@@ -24,13 +24,22 @@ html {
   height: 100vh;
   display: grid;
   grid-template-columns: minmax(min-content, 300px) 5fr;
-  grid-template-rows: 150px 1fr;
+  grid-template-rows: min-content 1fr;
   grid-template-areas: "sidebar header" "sidebar content";
 }
 
 h1 {
   font-size: 1.5rem;
   white-space: nowrap;
+}
+
+h2 {
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* sidebar */
@@ -71,16 +80,14 @@ h1 {
 
 /* header */
 
-.header * {
-  border: 1px solid red;
-}
-
 .header {
   grid-area: header;
-  padding: 0 35px;
+  padding: 20px 40px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "search notifications" "welcome buttons";
+  gap: 20px;
+  box-shadow: 0 5px 10px var(--shadow);
 }
 
 .search {
@@ -94,6 +101,12 @@ h1 {
 
 .search input {
   flex: 1;
+  appearance: none;
+  font-size: 1.2rem;
+  background-color: var(--gray);
+  border: 0;
+  border-radius: 20px;
+  padding: 0 20px;
 }
 
 .notifications {
@@ -102,6 +115,17 @@ h1 {
   justify-content: flex-end;
   align-items: center;
   gap: 25px;
+  white-space: nowrap;
+}
+
+.user-icon {
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: orange;
+}
+
+.notifications .user-icon {
+  height: 40px;
 }
 
 .welcome {
@@ -110,17 +134,19 @@ h1 {
   grid-template-columns: repeat(2, min-content);
   grid-template-rows: repeat(2, min-content);
   grid-template-areas: "icon introduction" "icon name";
-  gap: 10px;
+  gap: 0px 20px;
   align-items: center;
   align-content: center;
 }
 
 .welcome img {
   grid-area: icon;
+  height: 65px;
 }
 
-.welcome p {
+.welcome h5 {
   grid-area: introduction;
+  margin-bottom: -10px;
 }
 
 .welcome h1 {
@@ -135,7 +161,15 @@ h1 {
 }
 
 .buttons div {
-  padding: 10px 5%;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 20px;
+  padding: 10px 8%;
+}
+
+.buttons a {
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 /* content */
