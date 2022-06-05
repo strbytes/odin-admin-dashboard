@@ -13,10 +13,17 @@ html {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: minmax(min-content, 1fr) 5fr;
+  grid-template-columns: minmax(min-content, 300px) 5fr;
   grid-template-rows: 150px 1fr;
   grid-template-areas: "sidebar header" "sidebar content";
 }
+
+h1 {
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+/* sidebar */
 
 .sidebar {
   grid-area: sidebar;
@@ -24,10 +31,6 @@ html {
   display: grid;
   grid-template-rows: repeat(3, min-content);
   gap: 50px;
-}
-
-h1 {
-  font-size: 1.5rem;
 }
 
 .sidebar ul {
