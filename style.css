@@ -215,6 +215,29 @@ a {
   background-color: var(--secondary);
   width: 10px;
 }
+
+.card-contents {
+  flex-basis: 90%;
+  margin: 35px 25px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-contents p {
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+}
+
+.card-contents div:first-child {
+  height: 60%;
+}
+.card-contents div:last-child {
+  align-self: flex-end;
+  display: flex;
+  gap: 25px;
+}
+
 .announcements * {
   border: 1px solid red;
 }
