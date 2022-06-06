@@ -177,10 +177,6 @@ a {
 
 /* content */
 
-.content * {
-  border: 1px solid red;
-}
-
 .content {
   grid-area: content;
   min-height: 0;
@@ -206,6 +202,8 @@ a {
 
 .card {
   margin: 10px 10px 10px 0;
+.announcements * {
+  border: 1px solid red;
 }
 
 .announcements {
@@ -222,6 +220,9 @@ a {
   justify-content: space-around;
 }
 
+.trending * {
+  border: 1px solid red;
+}
 .trending {
   grid-area: trending;
   display: flex;
