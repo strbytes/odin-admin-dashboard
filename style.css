@@ -283,17 +283,19 @@ a {
   -webkit-box-orient: vertical;
 }
 
-.trending * {
-  border: 1px solid red;
-}
 .trending {
   grid-area: trending;
-  display: flex;
-  flex-direction: column;
 }
 
 .trending > div {
-  flex: 1;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px var(--shadow);
+  margin: 10px 10px 10px 0;
+}
+
+.trending-content {
+  height: 32vh;
   margin: 10px;
   display: flex;
   flex-direction: column;
