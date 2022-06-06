@@ -88,7 +88,7 @@ a {
   grid-template-areas: "search notifications" "welcome buttons";
   gap: 20px;
   position: relative; /* needed for the shadow to work */
-  box-shadow: 0 5px 10px var(--shadow);
+  box-shadow: 5px 5px 10px var(--shadow);
 }
 
 .search {
@@ -207,7 +207,7 @@ a {
   margin: 10px 10px 10px 0;
   overflow: hidden; /* needed for border-radius to clip yellow bar */
   border-radius: 8px;
-  box-shadow: 0 5px 5px var(--shadow);
+  box-shadow: 5px 5px 5px var(--shadow);
   display: flex;
 }
 
