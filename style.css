@@ -296,7 +296,8 @@ a {
 
 .trending-content {
   height: 32vh;
-  margin: 10px;
+  margin: 25px;
+  padding: 10px 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -307,16 +308,24 @@ a {
   grid-template-columns: min-content 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "icon hashtag" "icon details";
+  column-gap: 20px;
 }
 
 .trending-item img {
   grid-area: icon;
+  width: 40px;
 }
 
 .trending-item h5 {
   grid-area: hashtag;
+  font-weight: normal;
+  align-self: end;
 }
 
 .trending-item p {
   grid-area: details;
+  color: var(--dark-gray);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  align-self: start;
 }
