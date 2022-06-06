@@ -178,6 +178,7 @@ a {
 /* content */
 
 .content {
+  background-color: var(--gray);
   grid-area: content;
   min-height: 0;
   padding: 25px 10px;
@@ -191,6 +192,7 @@ a {
   grid-area: projects;
   display: flex;
   flex-direction: column;
+  margin: 0 10px;
 }
 .projects > div {
   overflow: hidden scroll;
@@ -201,7 +203,18 @@ a {
 }
 
 .card {
+  background-color: var(--white);
   margin: 10px 10px 10px 0;
+  overflow: hidden; /* needed for border-radius to clip yellow bar */
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--shadow);
+  display: flex;
+}
+
+.card > div:first-child {
+  background-color: var(--secondary);
+  width: 10px;
+}
 .announcements * {
   border: 1px solid red;
 }
