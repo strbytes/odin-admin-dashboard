@@ -73,7 +73,7 @@ a {
 }
 
 .sidebar li {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   gap: 25px;
 }
@@ -87,6 +87,7 @@ a {
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "search notifications" "welcome buttons";
   gap: 20px;
+  position: relative; /* needed for the shadow to work */
   box-shadow: 0 5px 10px var(--shadow);
 }
 
@@ -165,6 +166,8 @@ a {
   color: var(--white);
   border-radius: 20px;
   padding: 10px 8%;
+  width: 100px;
+  text-align: center;
 }
 
 .buttons a {
