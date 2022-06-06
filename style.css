@@ -207,7 +207,7 @@ a {
   margin: 10px 10px 10px 0;
   overflow: hidden; /* needed for border-radius to clip yellow bar */
   border-radius: 8px;
-  box-shadow: 0 0 10px var(--shadow);
+  box-shadow: 0 5px 5px var(--shadow);
   display: flex;
 }
 
@@ -238,22 +238,49 @@ a {
   gap: 25px;
 }
 
-.announcements * {
-  border: 1px solid red;
-}
-
 .announcements {
   grid-area: announcements;
-  display: flex;
-  flex-direction: column;
 }
 
 .announcements > div {
-  flex: 1;
-  margin: 10px;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 5px 5px var(--shadow);
+  margin: 10px 10px 10px 0;
+}
+
+.announce-content {
+  height: 32vh;
+  padding: 25px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.announce-content hr {
+  margin: 0 25px;
+  border: 1px solid var(--gray);
+}
+
+.announce-item {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.announce-item p {
+  font-size: 0.7rem;
+}
+
+.announce-item p {
+  margin-top: 2px;
+  min-height: 0;
+  overflow: hidden;
+  font-size: 0.65rem;
+  color: var(--dark-gray);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .trending * {
