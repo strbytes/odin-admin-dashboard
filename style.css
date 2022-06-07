@@ -322,7 +322,7 @@ a:active {
   justify-content: space-around;
 }
 
-.trending-item {
+.trending-item a {
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-template-rows: 1fr 1fr;
