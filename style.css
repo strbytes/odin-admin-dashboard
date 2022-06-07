@@ -50,6 +50,10 @@ a:hover {
   fill: var(--secondary);
 }
 
+a:hover img {
+  opacity: 0.9;
+}
+
 a:active {
   color: var(--secondary-dark);
   fill: var(--secondary-dark);
