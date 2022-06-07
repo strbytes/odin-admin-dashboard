@@ -49,6 +49,7 @@ a {
   grid-area: sidebar;
   background-color: var(--primary);
   color: var(--white);
+  fill: var(--white);
   padding: 20px 25px;
   display: grid;
   grid-template-rows: repeat(3, min-content);
@@ -235,6 +236,7 @@ a {
 }
 .card-contents div:last-child {
   align-self: flex-end;
+  fill: var(--gray-icon);
   display: flex;
   gap: 25px;
 }
