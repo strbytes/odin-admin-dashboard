@@ -78,8 +78,9 @@ a:active {
   align-items: center;
 }
 
-.sidebar h1 img {
+.sidebar h1 svg {
   height: 48px;
+  width: 48px;
   margin-left: -15px;
   margin-right: 15px;
 }
