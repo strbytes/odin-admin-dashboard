@@ -3,9 +3,10 @@
   --primary: #1992d4;
   --secondary: #facc17;
   --white: #ffffff;
-  --gray: #e2e8f0;
+  --content-background: #e2e8f0;
   --black: #000000;
-  --dark-gray: #636363;
+  --gray-text: #636363;
+  --gray-icon: #333333;
   --shadow: #ccd1d8;
 }
 
@@ -104,7 +105,7 @@ a {
   flex: 1;
   appearance: none;
   font-size: 1.2rem;
-  background-color: var(--gray);
+  background-color: var(--content-background);
   border: 0;
   border-radius: 20px;
   padding: 0 20px;
@@ -178,7 +179,7 @@ a {
 /* content */
 
 .content {
-  background-color: var(--gray);
+  background-color: var(--content-background);
   grid-area: content;
   min-height: 0;
   padding: 25px 10px;
@@ -226,7 +227,7 @@ a {
 
 .card-contents p {
   font-size: 0.9rem;
-  color: var(--dark-gray);
+  color: var(--gray-text);
 }
 
 .card-contents div:first-child {
@@ -259,7 +260,7 @@ a {
 
 .announce-content hr {
   margin: 0 25px;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--content-background);
 }
 
 .announce-item {
@@ -277,7 +278,7 @@ a {
   min-height: 0;
   overflow: hidden;
   font-size: 0.65rem;
-  color: var(--dark-gray);
+  color: var(--gray-text);
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -324,7 +325,7 @@ a {
 
 .trending-item p {
   grid-area: details;
-  color: var(--dark-gray);
+  color: var(--gray-text);
   font-size: 0.9rem;
   white-space: nowrap;
   align-self: start;
